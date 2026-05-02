@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctxc"
+version = "0.1.0"
+description = "Context Compiler SDK for Python"
+authors = [
+    {name = "Context Compiler Team"}
+]
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]

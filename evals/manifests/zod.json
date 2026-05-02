@@ -1,0 +1,6 @@
+{
+  "name": "zod",
+  "gt_files": [
+    "packages/zod/src/v4/core/schemas.ts"
+  ]
+}

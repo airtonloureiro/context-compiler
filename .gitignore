@@ -1,0 +1,30 @@
+.ctxc/
+.maestri/
+target/
+node_modules/
+dist/
+evals/fixtures/
+
+# Documentação estratégica, planejamento e agentes (Não subir para o cliente)
+docs/
+docs-ux/
+maestri-notes/
+roles/
+schemas/
+templates/
+context-compiler-spec-dev-v2/
+
+# Arquivos na raiz de anotações e planejamento
+BOOTSTRAP_GUIDE.md
+CANVAS_LAYOUT.md
+CONNECTION_MATRIX.md
+EVAL_REPORT.md
+EXPRESS_BENCHMARK.md
+MASSIVE_STRESS_TEST_REPORT.md
+OTC_BENCHMARK.md
+GEMINI.md
+*.md
+!README.md
+
+# Ignorar a pasta temporária clonada
+.tmp/

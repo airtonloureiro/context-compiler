@@ -1,0 +1,40 @@
+{
+  "task": {
+    "type": "answer_question",
+    "goal": "Responder com base no contexto fornecido"
+  },
+  "target": {
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "token_budget": 2000
+  },
+  "context_items": [
+    {
+      "id": "ctx_001",
+      "type": "message",
+      "role": "user",
+      "content": "Meu build Docker está quebrando com erro Cannot find module '@prisma/client'."
+    },
+    {
+      "id": "ctx_002",
+      "type": "log",
+      "content": "Error: Cannot find module '@prisma/client'\nError: Cannot find module '@prisma/client'"
+    },
+    {
+      "id": "ctx_003",
+      "type": "file",
+      "source": {
+        "path": "package.json"
+      },
+      "content": "{ \"dependencies\": { \"@prisma/client\": \"latest\" }, \"scripts\": { \"build\": \"next build\" } }"
+    },
+    {
+      "id": "ctx_004",
+      "type": "file",
+      "source": {
+        "path": "Dockerfile"
+      },
+      "content": "FROM node:20-alpine\nWORKDIR /app\nCOPY . .\nRUN npm install\nRUN npm run build\nCMD [\"npm\", \"start\"]"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "context-compiler",
+  "gt_files": [
+    "src/lib.rs",
+    "src/scanner.rs",
+    "src/compile.rs",
+    "src/cli.rs"
+  ]
+}

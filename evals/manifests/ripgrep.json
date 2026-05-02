@@ -1,0 +1,8 @@
+{
+  "name": "ripgrep",
+  "gt_files": [
+    "crates/core/main.rs",
+    "crates/searcher/src/lib.rs",
+    "crates/ignore/src/lib.rs"
+  ]
+}
